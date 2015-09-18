@@ -336,7 +336,7 @@ else " LIGHT VARIANT
   let s:wine  = ['#870087', '90']
 
   " Basics:
-  let s:foreground   = ['#444444', '238']
+  let s:foreground   = ['#333333', '238']
   let s:background   = ['#F5F5F5', '255']
   let s:selection    = ['#d0d0d0', '252']
   let s:nontext      = ['#dfafff', '189']
