@@ -1062,10 +1062,10 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call s:HL("DiffText",   s:difftext_fg,   s:difftext_bg,   "none")
 
   " Plugin: Spell Checking
-  call s:HL("SpellBad",   s:foreground, s:spellbad,   "")
-  call s:HL("SpellCap",   s:foreground, s:spellcap,   "")
-  call s:HL("SpellRare",  s:foreground, s:spellrare,  "")
-  call s:HL("SpellLocal", s:foreground, s:spelllocal, "")
+  " call s:HL("SpellBad",   s:foreground, s:spellbad,   "")
+  " call s:HL("SpellCap",   s:foreground, s:spellcap,   "")
+  " call s:HL("SpellRare",  s:foreground, s:spellrare,  "")
+  " call s:HL("SpellLocal", s:foreground, s:spelllocal, "")
 
   " Plugin: Indent Guides
   call s:HL("IndentGuidesOdd", "", s:background, "")
