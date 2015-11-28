@@ -489,7 +489,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   "call s:HL("Ignore", "666666", "", "")
 
   call s:HL("Error", s:foreground, s:error, "")
-  call s:HL("Todo", s:todo, s:background, "bold")
+  call s:HL("Todo", s:comment, s:background, "bold")
 
   call s:HL("Title", s:comment, "", "")
   call s:HL("Global", s:blue, "", "")
