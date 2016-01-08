@@ -453,7 +453,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call s:HL("CursorColumn", "", s:cursorcolumn, "none")
     call s:HL("PMenu", s:foreground, s:selection, "none")
     call s:HL("PMenuSel", s:foreground, s:selection, "reverse")
-    call s:HL("SignColumn", "", s:background, "none")
+    call s:HL("SignColumn", s:green, s:background, "none")
   end
   if version >= 703
     call s:HL("ColorColumn", "", s:cursorcolumn, "none")
@@ -1112,8 +1112,12 @@ call s:HL("cssClassName", s:pink, "", "")
   call s:HL("NERDTreeHelp", s:foreground, "", "")
   call s:HL("NERDTreeToggleOff", s:red, "", "")
   call s:HL("NERDTreeToggleOn", s:green, "", "")
-  call s:HL("NERDTreeDir", s:aqua, "", "bold")
+  call s:HL("NERDTreeDir", s:blue, "", "bold")
+  call s:HL("NERDTreeDirSlash", s:pink, "", "")
+  call s:HL("NERDTreeFile", s:foreground, "", "")
   call s:HL("NERDTreeExecFile", s:green, "", "")
+  call s:HL("NERDTreeOpenable", s:pink, "", "bold")
+  call s:HL("NERDTreeClosable", s:pink, "", "")
 
   " Plugin: Tagbar
   call s:HL("TagbarHelpTitle", s:blue, "", "bold")
