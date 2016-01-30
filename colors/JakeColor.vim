@@ -1,13 +1,14 @@
-" Theme: PaperColor
-" Author: Nguyen Nguyen <NLKNguyen@MSN.com>
+" Theme: JakeColor
+" Author: Jake Harr <jakeharr@gmail.com>
 " License: MIT
-" Origin: http://github.com/NLKNguyen/papercolor-theme.git
+" Origin: http://github.com/jakar/vim-jakecolor
 "
-" Modified from the theme 'Tomorrow'
+" Modified from the theme 'PaperColor' by Nguyen Nguyen
+" http://github.com/NLKNguyen/papercolor-theme.git
 
 hi clear
 syntax reset
-let g:colors_name = "PaperColor"
+let g:colors_name = "JakeColor"
 
 " Helper Functions: {{{
 " Returns an approximate grey index for the given grey level
