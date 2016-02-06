@@ -556,51 +556,52 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call s:HL("cmakeVariableValue", s:blue, "", "")
   call s:HL("cmakeOperators", s:red, "", "")
 
-  " C Highlighting
-  call s:HL("cType", s:pink, "", "bold")
-  call s:HL("cFormat", s:olive, "", "")
-  call s:HL("cStorageClass", s:navy, "", "bold")
+  "
+  " C / C++ Highlighting
+  "
+  call s:HL("cType", s:navy, "", "")
+  call s:HL("cppType", s:navy, "", "")
 
-  call s:HL("cBoolean", s:green, "", "")
-  call s:HL("cCharacter", s:olive, "", "")
-  call s:HL("cConstant", s:green, "", "bold")
-  call s:HL("cConditional", s:purple, "", "bold")
-  call s:HL("cSpecial", s:olive, "", "bold")
-  call s:HL("cDefine", s:blue, "", "")
-  call s:HL("cNumber", s:orange, "", "")
+  call s:HL("cStorageClass", s:green, "", "bold")
+  call s:HL("cppStorageClass", s:green, "", "bold")
+
+  call s:HL("cInclude", s:wine, "", "")
+  call s:HL("cDefine", s:aqua, "", "")
   call s:HL("cPreCondit", s:aqua, "", "")
-  call s:HL("cRepeat", s:purple, "", "bold")
-  call s:HL("cLabel",s:aqua, "", "")
-  " call s:HL("cAnsiFunction",s:aqua, "", "bold")
-  " call s:HL("cAnsiName",s:pink, "", "")
-  call s:HL("cDelimiter",s:blue, "", "")
-  " call s:HL("cBraces",s:foreground, "", "")
-  " call s:HL("cIdentifier",s:blue, s:pink, "")
-  " call s:HL("cSemiColon","", s:blue, "")
-  call s:HL("cOperator",s:aqua, "", "")
-  " call s:HL("cStatement",s:pink, "", "")
-  call s:HL("cFunction", s:foreground, "", "")
-  " call s:HL("cTodo", s:comment, "", "bold")
-  " call s:HL("cStructure", s:blue, "", "bold")
-  call s:HL("cCustomParen", s:foreground, "", "")
-  " call s:HL("cCustomFunc", s:foreground, "", "")
-  " call s:HL("cUserFunction",s:blue, "", "bold")
-  call s:HL("cOctalZero", s:purple, "", "bold")
+  call s:HL("cPreProc", s:aqua, "", "")
 
-  " CPP highlighting
-  call s:HL("cppBoolean", s:navy, "", "")
-  call s:HL("cppSTLnamespace", s:purple, "", "")
-  call s:HL("cppSTLconstant", s:foreground, "", "")
-  call s:HL("cppSTLtype", s:foreground, "", "")
-  call s:HL("cppSTLexception", s:pink, "", "")
-  call s:HL("cppSTLfunctional", s:foreground, "", "bold")
-  call s:HL("cppSTLiterator", s:foreground, "", "bold")
-  " call s:HL("cppSTLfunction", s:aqua, "", "bold")
-  call s:HL("cppExceptions", s:red, "", "")
-  call s:HL("cppStatement", s:blue, "", "")
-  call s:HL("cppStorageClass", s:navy, "", "bold")
-  call s:HL("cppAccess",s:blue, "", "")
-  " call s:HL("cppSTL",s:blue, "", "")
+  call s:HL("cConstant", s:green, "", "")
+  call s:HL("cppConstant", s:green, "", "")
+  call s:HL("cppBoolean", s:green, "", "")
+
+  call s:HL("cNumber", s:orange, "", "")
+
+  call s:HL("cCharacter", s:olive, "", "")
+  call s:HL("cFormat", s:olive, "", "bold")
+  call s:HL("cSpecial", s:olive, "", "bold")
+  call s:HL("cppRawStringDelimiter", s:olive, "", "bold")
+
+  call s:HL("cConditional", s:purple, "", "bold")
+  call s:HL("cRepeat", s:purple, "", "bold")
+  call s:HL("cppExceptions", s:purple, "", "bold")
+
+  call s:HL("cStatement", s:red, "", "bold")
+  call s:HL("cppStatement", s:red, "", "")
+
+  call s:HL("cOperator", s:blue, "", "")
+  call s:HL("cppOperator", s:blue, "", "")
+  call s:HL("cppCast", s:blue, "", "")
+
+  call s:HL("cLabel", s:pink, "", "")
+  call s:HL("cUserLabel", s:pink, "", "")
+
+  call s:HL("cppModifier", s:orange, "", "bold")
+  call s:HL("cppAccess", s:purple, "", "")
+
+  call s:HL("cStructure", s:blue, "", "bold")
+  " call s:HL("cppStructure", s:blue, "", "bold")
+
+  call s:HL("cOctalZero", s:foreground, "", "bold")
 
 
   " Lex highlighting
