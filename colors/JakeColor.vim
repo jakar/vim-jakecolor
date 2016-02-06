@@ -1206,6 +1206,10 @@ call s:HL("cssClassName", s:pink, "", "")
   call s:HL("StartifyBracket", s:aqua, "", "")
   call s:HL("StartifySpecial", s:aqua, "", "")
 
+  " Plugin: better-whitespace
+  " Make extra whitespace have white background.
+  call s:HL("ExtraWhitespace", "", ["#ffffff", "255"], "")
+
   "=====================================================================
   " SYNTAX HIGHLIGHTING CODE BELOW THIS LINE ISN'T TESTED FOR THIS THEME
   "=====================================================================
