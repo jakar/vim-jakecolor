@@ -427,8 +427,9 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   endif
 
   highlight LineNr term=bold cterm=NONE ctermfg=darkgrey ctermbg=NONE gui=NONE guifg=darkgrey guibg=NONE
-  call s:HL("NonText", s:nontext, "", "")
-  call s:HL("SpecialKey", s:nontext, "", "")
+
+  call s:HL("NonText", s:nontext, ["#dddddd", "253"], "bold")
+  call s:HL("SpecialKey", s:nontext, "", "bold")
   call s:HL("Search", s:search_fg, s:search_bg, "")
   call s:HL("LineNr", s:linenumber, "", "")
   call s:HL("TabLine", s:tabline_inactive_fg, s:tabline_inactive_bg, "None")
