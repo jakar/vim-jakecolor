@@ -592,14 +592,15 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call s:HL("cppOperator", s:blue, "", "")
   call s:HL("cppCast", s:blue, "", "")
 
+  " syntax parses public/private as cUserLabel sometimes
   call s:HL("cLabel", s:pink, "", "")
-  call s:HL("cUserLabel", s:pink, "", "")
-
-  call s:HL("cppModifier", s:orange, "", "bold")
+  call s:HL("cUserLabel", s:purple, "", "")
   call s:HL("cppAccess", s:purple, "", "")
 
+  call s:HL("cppModifier", s:orange, "", "bold")
+
   call s:HL("cStructure", s:blue, "", "bold")
-  " call s:HL("cppStructure", s:blue, "", "bold")
+  call s:HL("cppStructure", s:blue, "", "bold")
 
   call s:HL("cOctalZero", s:foreground, "", "bold")
 
