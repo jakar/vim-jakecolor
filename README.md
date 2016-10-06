@@ -4,3 +4,5 @@ This is a fork of [PaperColor][papercolor] that has been hacked for personal pre
 
 [papercolor]: https://github.com/NLKNguyen/papercolor-theme
 
+Seriously, this is a mess. It needs to be reorganized.
+
