@@ -518,8 +518,8 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call s:HL("Structure", s:blue, "", "bold")
   call s:HL("Typedef", s:pink, "", "bold")
 
-  call s:HL("Special", s:foreground, "", "")
-  call s:HL("SpecialChar", s:foreground, "", "")
+  call s:HL("Special", s:olive, "", "bold")
+  call s:HL("SpecialChar", s:todo, "", "")
   call s:HL("Tag", s:green, "", "")
   call s:HL("Delimiter",s:aqua, "", "")
   call s:HL("SpecialComment", s:comment, "", "bold")
@@ -773,30 +773,32 @@ call s:HL("cssClassName", s:pink, "", "")
 
   " Python Highlighting
   call s:HL("pythonImport", s:pink, "", "bold")
-  call s:HL("pythonExceptions", s:red, "", "")
   call s:HL("pythonException", s:purple, "", "bold")
   call s:HL("pythonInclude", s:red, "", "")
   call s:HL("pythonStatement", s:pink, "", "")
   call s:HL("pythonConditional", s:purple, "", "bold")
   call s:HL("pythonRepeat", s:purple, "", "bold")
   call s:HL("pythonFunction", s:aqua, "", "bold")
-  call s:HL("pythonPreCondit", s:purple, "", "")
-  call s:HL("pythonExClass", s:orange, "", "")
   call s:HL("pythonOperator", s:purple, "", "bold")
-  call s:HL("pythonBuiltin", s:foreground, "", "")
-  call s:HL("pythonDecorator", s:orange, "", "")
 
-  call s:HL("pythonString", s:olive, "", "")
-  call s:HL("pythonEscape", s:olive, "", "bold")
-  call s:HL("pythonStrFormatting", s:olive, "", "bold")
-
-  call s:HL("pythonBoolean", s:green, "", "bold")
-  call s:HL("pythonExClass", s:red, "", "")
-  call s:HL("pythonBytesEscape", s:olive, "", "bold")
+  call s:HL("pythonDecorator", s:purple, "", "")
   call s:HL("pythonDottedName", s:purple, "", "")
-  call s:HL("pythonStrFormat", s:foreground, "", "")
-  call s:HL("pythonBuiltinFunc", s:foreground, "", "")
-  call s:HL("pythonBuiltinObj", s:foreground, "", "")
+
+  call s:HL("pythonExClass", s:red, "", "")
+  call s:HL("pythonBoolean", s:green, "", "bold")
+  call s:HL("pythonBuiltinFunc", s:navy, "", "")
+  call s:HL("pythonBuiltinObj", s:blue, "", "bold")
+  call s:HL("pythonNone", s:blue, "", "bold")
+
+  let s:py_multiline = s:blue
+
+  call s:HL("pythonStringMultiline", s:py_multiline, "", "")
+  call s:HL("pythonRawStringMultiline", s:py_multiline, "", "")
+  call s:HL("pythonUniStringMultiline", s:py_multiline, "", "")
+  call s:HL("pythonUniRawStringMultiline", s:py_multiline, "", "")
+  call s:HL("pythonBytesMultiline", s:py_multiline, "", "")
+  call s:HL("pythonRawBytesMultiline", s:py_multiline, "", "")
+  call s:HL("pythonBytesContentMultiline", s:py_multiline, "", "")
 
   " Java Highlighting
   call s:HL("javaExternal", s:pink, "", "")
