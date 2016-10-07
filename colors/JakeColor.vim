@@ -518,8 +518,10 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call s:HL("Structure", s:blue, "", "bold")
   call s:HL("Typedef", s:pink, "", "bold")
 
+  let s:white = ["#ffffff", "255"]
+
   call s:HL("Special", s:olive, "", "bold")
-  call s:HL("SpecialChar", s:todo, "", "")
+  call s:HL("SpecialChar", s:foreground, s:white, "")
   call s:HL("Tag", s:green, "", "")
   call s:HL("Delimiter",s:aqua, "", "")
   call s:HL("SpecialComment", s:comment, "", "bold")
