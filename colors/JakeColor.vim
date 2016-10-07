@@ -784,6 +784,8 @@ call s:HL("cssClassName", s:pink, "", "")
   call s:HL("pythonDecorator", s:purple, "", "")
   call s:HL("pythonDottedName", s:purple, "", "")
 
+  call s:HL("pythonConvention", s:aqua, "", "")
+
   call s:HL("pythonExClass", s:red, "", "")
   call s:HL("pythonBoolean", s:green, "", "bold")
   call s:HL("pythonBuiltinFunc", s:navy, "", "")
