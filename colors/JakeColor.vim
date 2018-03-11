@@ -1103,7 +1103,7 @@ call s:HL("cssClassName", s:pink, "", "")
   " Yaml Highlighting
   call s:HL("yamlBlockMappingKey", s:blue, "", "")
   call s:HL("yamlKeyValueDelimiter", s:pink, "", "")
-  call s:HL("yamlBlockCollectionItemStart", s:pink, "", "")
+  call s:HL("yamlBlockCollectionItemStart", s:pink, "", "bold")
 
   " Qt QML Highlighting
   call s:HL("qmlObjectLiteralType", s:pink, "", "")
