@@ -917,13 +917,15 @@ call s:HL("cssClassName", s:pink, "", "")
 
 
   " Haskell Highlighting
-  call s:HL("haskellType", s:aqua, "", "bold")
+  call s:HL("haskellType", s:navy, "", "")
   call s:HL("haskellIdentifier", s:orange, "", "bold")
   call s:HL("haskellOperators", s:pink, "", "")
   call s:HL("haskellWhere", s:foreground, "", "bold")
   call s:HL("haskellDelimiter", s:aqua, "", "")
   call s:HL("haskellImportKeywords", s:pink, "", "")
   call s:HL("haskellStatement", s:purple, "", "bold")
+
+  call s:HL("haskellKeyword", s:purple, "", "bold")
 
 
   " SQL/MySQL Highlighting
