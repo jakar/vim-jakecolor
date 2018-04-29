@@ -917,11 +917,11 @@ call s:HL("cssClassName", s:pink, "", "")
 
 
   " Haskell Highlighting
-  call s:HL("haskellType", s:navy, "", "")
-  call s:HL("haskellIdentifier", s:orange, "", "bold")
+  call s:HL("haskellType", s:foreground, "", "")
+  call s:HL("haskellIdentifier", s:aqua, "", "")
   call s:HL("haskellOperators", s:pink, "", "")
   call s:HL("haskellWhere", s:foreground, "", "bold")
-  call s:HL("haskellDelimiter", s:aqua, "", "")
+  call s:HL("haskellDelimiter", s:navy, "", "")
   call s:HL("haskellImportKeywords", s:pink, "", "")
   call s:HL("haskellStatement", s:purple, "", "bold")
 
