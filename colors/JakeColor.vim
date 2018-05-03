@@ -589,17 +589,17 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call s:HL("cType", s:navy, "", "")
   call s:HL("cppType", s:navy, "", "")
 
-  call s:HL("cStorageClass", s:green, "", "bold")
-  call s:HL("cppStorageClass", s:green, "", "bold")
+  call s:HL("cStorageClass", s:green, "", "")
+  call s:HL("cppStorageClass", s:green, "", "")
 
   call s:HL("cInclude", s:wine, "", "")
   call s:HL("cDefine", s:aqua, "", "")
   call s:HL("cPreCondit", s:aqua, "", "")
   call s:HL("cPreProc", s:aqua, "", "")
 
-  call s:HL("cConstant", s:green, "", "")
-  call s:HL("cppConstant", s:green, "", "")
-  call s:HL("cppBoolean", s:green, "", "")
+  call s:HL("cConstant", s:foreground, "", "")
+  call s:HL("cppConstant", s:green, "", "bold")
+  call s:HL("cppBoolean", s:green, "", "bold")
 
   call s:HL("cNumber", s:orange, "", "")
 
