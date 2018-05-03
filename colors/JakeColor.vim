@@ -687,18 +687,23 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call s:HL("mipsDirective", s:purple, "", "bold")
 
   " Shell/Bash highlighting
-  call s:HL("bashStatement", s:foreground, "", "bold")
-  call s:HL("shDerefVar", s:aqua, "", "bold")
-  call s:HL("shDerefSimple", s:aqua, "", "")
+  call s:HL("bashStatement", s:foreground, "", "")
+  call s:HL("shDerefVar", s:purple, "", "")
+  call s:HL("shDerefSimple", s:purple, "", "")
   call s:HL("shFunction", s:orange, "", "bold")
   call s:HL("shStatement", s:foreground, "", "")
   call s:HL("shLoop", s:purple, "", "bold")
   call s:HL("shQuote", s:olive, "", "")
-  call s:HL("shCaseEsac", s:aqua, "", "bold")
-  call s:HL("shSnglCase", s:purple, "", "none")
-  call s:HL("shFunctionOne", s:navy, "", "")
+  call s:HL("shCaseEsac", s:foreground, "", "")
+  call s:HL("shSnglCase", s:purple, "", "bold")
+  call s:HL("shFunctionOne", s:foreground, "", "")
   call s:HL("shCase", s:navy, "", "")
   call s:HL("shSetList", s:navy, "", "")
+
+  call s:HL("shArithmetic", s:foreground, "", "")
+  call s:HL("shOption", s:foreground, "", "")
+  call s:HL("shCommandSub", s:foreground, "", "")
+
   " @see Dockerfile Highlighting section for more sh*
 
   " HTML Highlighting
@@ -1087,9 +1092,9 @@ call s:HL("cssClassName", s:pink, "", "")
   " Dockerfile Highlighting
   " @target https://github.com/docker/docker/tree/master/contrib/syntax/vim
   call s:HL("dockerfileKeyword", s:blue, "", "")
-  call s:HL("shDerefVar", s:purple, "", "bold")
+  call s:HL("shDerefVar", s:purple, "", "")
   call s:HL("shOperator", s:aqua, "", "")
-  call s:HL("shOption", s:navy, "", "")
+  call s:HL("shOption", s:foreground, "", "")
   call s:HL("shLine", s:foreground, "", "")
   call s:HL("shWrapLineOperator", s:pink, "", "")
 
