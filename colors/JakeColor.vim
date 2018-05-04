@@ -598,8 +598,8 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call s:HL("cPreProc", s:aqua, "", "")
 
   call s:HL("cConstant", s:foreground, "", "")
-  call s:HL("cppConstant", s:green, "", "bold")
-  call s:HL("cppBoolean", s:green, "", "bold")
+  call s:HL("cppConstant", s:orange, "", "")
+  call s:HL("cppBoolean", s:orange, "", "")
 
   call s:HL("cNumber", s:orange, "", "")
 
@@ -610,7 +610,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 
   call s:HL("cConditional", s:purple, "", "bold")
   call s:HL("cRepeat", s:purple, "", "bold")
-  call s:HL("cppExceptions", s:purple, "", "bold")
+  call s:HL("cppExceptions", s:foreground, "", "bold")
 
   call s:HL("cStatement", s:red, "", "bold")
   call s:HL("cppStatement", s:red, "", "")
