@@ -578,9 +578,9 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call s:HL("makeSpecial", s:orange, "", "bold")
 
   " CMake Highlighting
-  call s:HL("cmakeStatement", s:pink, "", "")
+  call s:HL("cmakeStatement", s:navy, "", "")
   call s:HL("cmakeArguments", s:foreground, "", "")
-  call s:HL("cmakeVariableValue", s:blue, "", "")
+  call s:HL("cmakeVariableValue", s:purple, "", "")
   call s:HL("cmakeOperators", s:red, "", "")
 
   "
